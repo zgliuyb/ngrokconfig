@@ -1,11 +1,16 @@
 server_addr: tunnel.trodc.site:4443
 trust_host_root_certs: false
 tunnels:
-   ssh:
-     remote_port: 50022
-     proto:
-       tcp: 22
-   desktop:
-     remote_port: 53389
-     proto:
-       tcp: 3389
+  ssh:
+    remote_port: 50022
+    proto:
+      tcp: 22
+  desktop:
+    remote_port: 53389
+    proto:
+      tcp: 3389
+  web:
+    remote_port: 18180
+    subdomain: tdc
+    proto:
+      http: 8180
